@@ -2,8 +2,8 @@ provider "null" {
   version = "~> 1.0"
 }
 
-resource "null_resource" "hello1" {
+resource "null_resource" "hello" {
   provisioner local-exec {
-    command = "set /p=hello >> greetings.txt <nul"
+    command = "echo hello"
   }
 }
